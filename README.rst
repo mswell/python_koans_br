@@ -5,8 +5,7 @@ Python Koans
 .. image:: https://travis-ci.org/gregmalcolm/python_koans.png?branch=master
    :target: http://travis-ci.org/gregmalcolm/python_koans
 
-Python Koans BR é a versão traduzida do "Python Koans" 
- http://github.com/gregmalcolm/python_koans/.
+Python Koans BR é a versão traduzida do "Python Koans" http://github.com/gregmalcolm/python_koans/.
 
 .. image:: http://i442.photobucket.com/albums/qq150/gregmalcolm/PythonKoansScreenshot.png
 
