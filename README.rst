@@ -10,7 +10,6 @@ Python Koans BR é tutorial interativo para aprender python guiado por testes.
 
 A maioria dos testes serão *resolvidos* by preenchendo as partes que faltam nas funções assert. Ex:
 
-.. code-block:: python
     self.assertEqual(__, 1+2)
 
 which can be fixed by replacing the __ part with the appropriate code:
