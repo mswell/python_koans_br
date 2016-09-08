@@ -6,8 +6,6 @@ Python Koans BR
    :target: https://travis-ci.org/mswell/python_koans_br
 Python Koans BR é a versão traduzida do "Python Koans" http://github.com/gregmalcolm/python_koans/.
 
-.. image:: http://i442.photobucket.com/albums/qq150/gregmalcolm/PythonKoansScreenshot.png
-
 Python Koans is an interactive tutorial for learning the Python programming
 language by making tests pass.
 
