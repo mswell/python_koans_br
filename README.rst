@@ -6,11 +6,11 @@ Python Koans BR
    :target: https://travis-ci.org/mswell/python_koans_br
 Python Koans BR é a versão traduzida do "Python Koans" http://github.com/gregmalcolm/python_koans/.
 
-Python Koans is an interactive tutorial for learning the Python programming
-language by making tests pass.
+Python Koans BR é tutorial interativo para aprender python guiado por testes.
 
-Most tests are *fixed* by filling the missing parts of assert functions. Eg:
+A maioria dos testes serão *resolvidos* by preenchendo as partes que faltam nas funções assert. Ex:
 
+.. code-block:: python
     self.assertEqual(__, 1+2)
 
 which can be fixed by replacing the __ part with the appropriate code:
