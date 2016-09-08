@@ -28,19 +28,12 @@ As well as being a great way to learn some Python, it is also a good way to get
 a taste of Test Driven Development (TDD).
 
 
-Downloading Python Koans
-------------------------
+Downloading Python Koans BR
+---------------------------
 
-Python Koans is available through git on Github:
+Python Koans BR está disponível através do git no Github:
 
-    http://github.com/gregmalcolm/python_koans
-
-It is also mirrored on bitbucket for Mercurial users:
-
-    http://bitbucket.org/gregmalcolm/python_koans
-
-Either site will allow you to download the source as a zip/gz/bz2.
-
+    https://github.com/mswell/python_koans_br
 
 Installing Python Koans
 -----------------------
