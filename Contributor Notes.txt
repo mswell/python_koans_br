@@ -1,8 +1,8 @@
 
-Testing a specific koan
+Testando um koan especifico
 ===================================
 
-This will help when adding/modifing koans
+Isso vai ajudar quando for adicionar/modificar koans
 
 Running a whole test case:
 
