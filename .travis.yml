@@ -6,11 +6,13 @@ python:
     - 3.3
     - 3.4
     - 3.5
-
+install:
+  - pip install coveralls
 script:
     - PYTHON_VER=`python -c 'import sys; print(sys.version_info[0])'`
     - cd python$PYTHON_VER
     - python _runner_tests.py
+    - coverage run _runner_tests.py
 #   - python contemplate_koans.py                          # Run all the koans
 #   - python contemplate_koans.py about_asserts about_none # Run a subset of
 #                                                          # koans
@@ -19,6 +21,8 @@ script:
 #   koans you've passed? Then comment out one of the above "contemplate_koans"
 #   lines above!
 #
+after_sucess:
+  coveralls
 notifications:
   email: true
 
