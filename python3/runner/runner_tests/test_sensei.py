@@ -12,24 +12,42 @@ from runner.writeln_decorator import WritelnDecorator
 from runner.mockable_test_result import MockableTestResult
 from runner import path_to_enlightenment
 
+
 class AboutParrots:
     pass
+
+
 class AboutLumberjacks:
     pass
+
+
 class AboutTennis:
     pass
+
+
 class AboutTheKnightsWhoSayNi:
     pass
+
+
 class AboutMrGumby:
     pass
+
+
 class AboutMessiahs:
     pass
+
+
 class AboutGiantFeet:
     pass
+
+
 class AboutTrebuchets:
     pass
+
+
 class AboutFreemasons:
     pass
+
 
 error_assertion_with_message = """Traceback (most recent call last):
   File "/Users/Greg/hg/python_koans/koans/about_exploding_trousers.py ", line 43, in test_durability
@@ -217,7 +235,7 @@ class TestSensei(unittest.TestCase):
         self.sensei.failures = Mock()
         words = self.sensei.say_something_zenlike()
 
-        m = re.search("Beautiful is better than ugly", words)
+        m = re.search("Bonito é melhor que feio", words)
         self.assertTrue(m and m.group(0))
 
     def test_that_if_there_is_1_successes_it_will_say_the_second_zen_of_python_koans(self):
@@ -225,7 +243,7 @@ class TestSensei(unittest.TestCase):
         self.sensei.failures = Mock()
         words = self.sensei.say_something_zenlike()
 
-        m = re.search("Explicit is better than implicit", words)
+        m = re.search("Explícito é melhor que implícito", words)
         self.assertTrue(m and m.group(0))
 
     def test_that_if_there_is_10_successes_it_will_say_the_sixth_zen_of_python_koans(self):
@@ -249,7 +267,7 @@ class TestSensei(unittest.TestCase):
         self.sensei.failures = Mock()
         words = self.sensei.say_something_zenlike()
 
-        m = re.search("Beautiful is better than ugly", words)
+        m = re.search("Bonito é melhor que feio", words)
         self.assertTrue(m and m.group(0))
 
     def test_that_total_lessons_return_7_if_there_are_7_lessons(self):
