@@ -20,8 +20,6 @@ script:
 #   koans you've passed? Then comment out one of the above "contemplate_koans"
 #   lines above!
 #
-after_sucess:
-  - coveralls
 notifications:
   email: true
 
@@ -30,3 +28,5 @@ notifications:
 # about_none about_lists about_list_assignments about_dictionaries
 # about_strings about_tuples about_methods about_control_statements
 # about_true_and_false about_sets ...
+after_sucess:
+  - coveralls
