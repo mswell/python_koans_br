@@ -34,28 +34,17 @@ class Sensei(MockableTestResult):
                 self.stream.writeln()
                 self.stream.writeln("{0}{1}Pensando {2}".format(
                     Fore.RESET, Style.NORMAL, helper.cls_name(test)))
-<<<<<<< HEAD
-                if helper.cls_name(test) not in ['SobreAssercoes', 'AboutExtraCredit']:
-=======
                 if helper.cls_name(test) not in [
-                        'AboutAsserts', 'AboutExtraCredit']:
->>>>>>> tradu
+                        'SobreAssercoes', 'AboutExtraCredit']:
                     self.lesson_pass_count += 1
 
     def addSuccess(self, test):
         if self.passesCount():
             MockableTestResult.addSuccess(self, test)
-<<<<<<< HEAD
-            self.stream.writeln( \
-                "  {0}{1}{2} expandiu sua consciência.{3}{4}" \
-                .format(Fore.GREEN, Style.BRIGHT, test._testMethodName, \
-                Fore.RESET, Style.NORMAL))
-=======
             self.stream.writeln(
-                "  {0}{1}{2} has expanded your awareness.{3}{4}".format(
+                "  {0}{1}{2} expandiu sua conciência.{3}{4}".format(
                         Fore.GREEN, Style.BRIGHT, test._testMethodName,
                         Fore.RESET, Style.NORMAL))
->>>>>>> tradu
             self.pass_count += 1
 
     def addError(self, test, err):
@@ -123,37 +112,22 @@ class Sensei(MockableTestResult):
         if not problem:
             return
         test, err = problem
-<<<<<<< HEAD
-        self.stream.writeln("  {0}{1}O metodo {2} tem prejudicado seu "
-          "karma.".format(Fore.RED, Style.BRIGHT, test._testMethodName))
-
-        self.stream.writeln("\n{0}{1} Você ainda não alcançou a iluminação ..." \
-            .format(Fore.RESET, Style.NORMAL))
-        self.stream.writeln("{0}{1}{2}".format(Fore.RED, \
-            Style.BRIGHT, self.scrapeAssertionError(err)))
-        self.stream.writeln("")
-        self.stream.writeln("{0}{1}Por favor, medite sobre esse codigo:" \
-            .format(Fore.RESET, Style.NORMAL))
-        self.stream.writeln("{0}{1}{2}{3}{4}".format(Fore.YELLOW, Style.BRIGHT, \
-            self.scrapeInterestingStackDump(err), Fore.RESET, Style.NORMAL))
-=======
-        self.stream.writeln("  {0}{1}{2} has damaged your karma.".format(
+        self.stream.writeln("  {0}{1}O método {2} tem prejudicado seu carma.".format(
                 Fore.RED, Style.BRIGHT, test._testMethodName))
 
         self.stream.writeln(
-            "\n{0}{1}You have not yet reached enlightenment ...".format(
+            "\n{0}{1}Você ainda não alcançou a iluminação...".format(
                     Fore.RESET, Style.NORMAL))
         self.stream.writeln("{0}{1}{2}".format(
                 Fore.RED, Style.BRIGHT, self.scrapeAssertionError(err)))
         self.stream.writeln("")
         self.stream.writeln(
-            "{0}{1}Please meditate on the following code:".format(
+            "{0}{1}Por favor medite sobre esse codigo:".format(
                 Fore.RESET, Style.NORMAL))
         self.stream.writeln("{0}{1}{2}{3}{4}".format(
                 Fore.YELLOW, Style.BRIGHT,
                 self.scrapeInterestingStackDump(err),
                 Fore.RESET, Style.NORMAL))
->>>>>>> tradu
 
     def scrapeAssertionError(self, err):
         if not err:
