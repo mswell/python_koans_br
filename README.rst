@@ -8,7 +8,7 @@ Python Koans BR é a versão traduzida do "Python Koans" http://github.com/gregm
 
 Python Koans BR é tutorial interativo para aprender python guiado por testes.
 
-A maioria dos testes serão *resolvidos* by preenchendo as partes que faltam nas funções assert. Ex:
+A maioria dos testes serão *resolvidos* preenchendo as partes que faltam nas funções assert. Ex:
 
     self.assertEqual(__, 1+2)
 
