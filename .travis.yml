@@ -7,7 +7,7 @@ python:
     - 3.4
     - 3.5
 install:
-  - pip install coveralls
+  - pip install 'coveralls<4'
 script:
     - PYTHON_VER=`python -c 'import sys; print(sys.version_info[0])'`
     - cd python$PYTHON_VER
