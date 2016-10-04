@@ -33,7 +33,7 @@ class Sensei(MockableTestResult):
                 self.stream.writeln()
                 self.stream.writeln("{0}{1}Pensando {2}".format(
                     Fore.RESET, Style.NORMAL, helper.cls_name(test)))
-                if helper.cls_name(test) not in ['Asserções', 'AboutExtraCredit']:
+                if helper.cls_name(test) not in ['SobreAssercoes', 'AboutExtraCredit']:
                     self.lesson_pass_count += 1
 
     def addSuccess(self, test):

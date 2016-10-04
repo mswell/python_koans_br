@@ -3,7 +3,7 @@
 
 from runner.koan import *
 
-class AboutAsserts(Koan):
+class SobreAssercoes(Koan):
 
     def test_assert_truth(self):
         """
