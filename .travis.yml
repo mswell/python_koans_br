@@ -21,7 +21,7 @@ script:
 #   lines above!
 #
 after_sucess:
-  coveralls
+  - coveralls
 notifications:
   email: true
 
