@@ -31,16 +31,16 @@ class Sensei(MockableTestResult):
             self.prevTestClassName = helper.cls_name(test)
             if not self.failures:
                 self.stream.writeln()
-                self.stream.writeln("{0}{1}Thinking {2}".format(
+                self.stream.writeln("{0}{1}Pensando {2}".format(
                     Fore.RESET, Style.NORMAL, helper.cls_name(test)))
-                if helper.cls_name(test) not in ['AboutAsserts', 'AboutExtraCredit']:
+                if helper.cls_name(test) not in ['Asserções', 'AboutExtraCredit']:
                     self.lesson_pass_count += 1
 
     def addSuccess(self, test):
         if self.passesCount():
             MockableTestResult.addSuccess(self, test)
             self.stream.writeln( \
-                "  {0}{1}{2} has expanded your awareness.{3}{4}" \
+                "  {0}{1}{2} expandiu sua consciência.{3}{4}" \
                 .format(Fore.GREEN, Style.BRIGHT, test._testMethodName, \
                 Fore.RESET, Style.NORMAL))
             self.pass_count += 1
@@ -105,15 +105,15 @@ class Sensei(MockableTestResult):
         problem = self.firstFailure()
         if not problem: return
         test, err = problem
-        self.stream.writeln("  {0}{1}{2} has damaged your "
+        self.stream.writeln("  {0}{1}O metodo {2} tem prejudicado seu "
           "karma.".format(Fore.RED, Style.BRIGHT, test._testMethodName))
 
-        self.stream.writeln("\n{0}{1}You have not yet reached enlightenment ..." \
+        self.stream.writeln("\n{0}{1} Você ainda não alcançou a iluminação ..." \
             .format(Fore.RESET, Style.NORMAL))
         self.stream.writeln("{0}{1}{2}".format(Fore.RED, \
             Style.BRIGHT, self.scrapeAssertionError(err)))
         self.stream.writeln("")
-        self.stream.writeln("{0}{1}Please meditate on the following code:" \
+        self.stream.writeln("{0}{1}Por favor, medite sobre esse codigo:" \
             .format(Fore.RESET, Style.NORMAL))
         self.stream.writeln("{0}{1}{2}{3}{4}".format(Fore.YELLOW, Style.BRIGHT, \
             self.scrapeInterestingStackDump(err), Fore.RESET, Style.NORMAL))
@@ -167,8 +167,8 @@ class Sensei(MockableTestResult):
         return stack_text
 
     def report_progress(self):
-        return "You have completed {0} koans and " \
-            "{1} lessons.".format(
+        return "Você completou {0} koans e " \
+            "{1} lições.".format(
                 self.pass_count,
                 self.lesson_pass_count)
 
@@ -176,8 +176,8 @@ class Sensei(MockableTestResult):
         koans_remaining = self.total_koans() - self.pass_count
         lessons_remaining = self.total_lessons() - self.lesson_pass_count
 
-        return "You are now {0} koans and {1} lessons away from " \
-            "reaching enlightenment.".format(
+        return "Você agora esta a {0} koans e {1} lições de distancia da " \
+            "iluminação.".format(
                 koans_remaining,
                 lessons_remaining)
 
