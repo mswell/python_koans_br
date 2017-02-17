@@ -112,8 +112,11 @@ class Sensei(MockableTestResult):
         if not problem:
             return
         test, err = problem
-        self.stream.writeln("  {0}{1}O método {2} tem prejudicado seu carma.".format(
-                Fore.RED, Style.BRIGHT, test._testMethodName))
+        self.stream.writeln("  {0}{1}O método {2} tem \
+                            prejudicado seu carma.".format(
+                                Fore.RED,
+                                Style.BRIGHT,
+                                test._testMethodName))
 
         self.stream.writeln(
             "\n{0}{1}Você ainda não alcançou a iluminação...".format(
@@ -180,10 +183,12 @@ class Sensei(MockableTestResult):
         return stack_text
 
     def report_progress(self):
-        return "Você completou {0} koans e " \
-            "{1} lições.".format(
+        return "Você completou {0} ({2} %) koans e " \
+            "{1} (de {3}) lições.".format(
                 self.pass_count,
-                self.lesson_pass_count)
+                self.lesson_pass_count,
+                self.pass_count * 100 // self.total_koans(),
+                self.total_lessons())
 
     def report_remaining(self):
         koans_remaining = self.total_koans() - self.pass_count
